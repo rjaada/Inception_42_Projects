@@ -93,6 +93,9 @@ docker exec -it srcs-wordpress-1 bash
 docker exec -it srcs-mariadb-1 bash
 docker exec -it srcs-nginx-1 bash
 
+# Check admin/sub
+docker exec -it srcs-wordpress-1 wp user list --allow-root --path=/var/www/html
+
 # Check all volumes
 docker volume ls
 
